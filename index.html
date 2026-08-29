@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Disha Devgirkar | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Fluid Cursor Canvas -->
+  <canvas id="fluid" style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:50;"></canvas>
+
+  <!-- Particle Canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-logo">DD</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Disha<br><span>Devgirkar</span></h1>
+      <p class="hero-role">
+        <span class="typed-text"></span><span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-desc">Crafting beautiful digital experiences with passion and precision.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-ring">
+        <label class="upload-avatar" for="profile-upload" aria-label="Upload profile image">
+          <div class="avatar-inner">
+            <img id="avatarPhoto" src="/uploads/default-avatar.svg" alt="Disha Devgirkar" class="avatar-photo" />
+            <div class="upload-overlay">
+              <i class="fas fa-camera"></i>
+              <span>Upload</span>
+            </div>
+          </div>
+        </label>
+        <input type="file" id="profile-upload" accept="image/*" hidden />
+      </div>
+      <div class="floating-badge badge1"><i class="fas fa-code"></i> Developer</div>
+      <div class="floating-badge badge2"><i class="fas fa-palette"></i> Designer</div>
+      <div class="floating-badge badge3"><i class="fas fa-star"></i> Creative</div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <div class="section-header">
+      <h2>About <span>Me</span></h2>
+      <div class="underline"></div>
+    </div>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Hi, I'm <strong>Disha Devgirkar</strong>, a Computer Science and Engineering student with a strong passion for Artificial Intelligence, Machine Learning, and Full-Stack Development. I enjoy building innovative applications that solve real-world problems while continuously learning and exploring new technologies.</p>
+        <p>I have hands-on experience with Python, Java, C, SQL, React, Flask, MySQL, Machine Learning, and Deep Learning through academic projects and internships. My work includes AI-powered solutions such as a Student-to-Industry Transition Intelligence Platform, Food Recognition & Calorie Estimation, and Fake Certificate Detection using Blockchain.</p>
+        <p>I am a quick learner, a problem solver, and always eager to enhance my technical skills by working on challenging projects. My goal is to become a skilled AI/ML Engineer and contribute to creating impactful, technology-driven solutions that make a difference.</p>
+
+        <a href="disha cv.pdf.pdf" class="btn btn-primary" download="Disha_Devgirkar_CV.pdf">Download CV <i class="fas fa-download"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills section">
+    <div class="section-header">
+      <h2>My <span>Skills</span></h2>
+      <div class="underline"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card" data-tilt>
+        <i class="fab fa-python"></i>
+        <h3>Python</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+      </div>
+      <div class="skill-card" data-tilt>
+        <i class="fab fa-java"></i>
+        <h3>Java</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+      </div>
+      <div class="skill-card" data-tilt>
+        <i class="fas fa-code"></i>
+        <h3>C</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+      </div>
+      <div class="skill-card" data-tilt>
+        <i class="fab fa-react"></i>
+        <h3>React</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+      </div>
+      <div class="skill-card" data-tilt>
+        <i class="fab fa-html5"></i>
+        <h3>HTML / CSS</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+      </div>
+      <div class="skill-card" data-tilt>
+        <i class="fas fa-database"></i>
+        <h3>MySQL</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-card" data-tilt>
+        <i class="fas fa-brain"></i>
+        <h3>Machine Learning</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+      </div>
+      <div class="skill-card" data-tilt>
+        <i class="fas fa-network-wired"></i>
+        <h3>Deep Learning</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="68"></div></div>
+      </div>
+      <div class="skill-card" data-tilt>
+        <i class="fas fa-flask"></i>
+        <h3>Flask</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+      </div>
+      <div class="skill-card" data-tilt>
+        <i class="fab fa-git-alt"></i>
+        <h3>Git</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+      </div>
+      <div class="skill-card" data-tilt>
+        <i class="fas fa-cube"></i>
+        <h3>Blockchain</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+      </div>
+      <div class="skill-card" data-tilt>
+        <i class="fab fa-linux"></i>
+        <h3>Linux</h3>
+        <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects section">
+    <div class="section-header">
+      <h2>My <span>Projects</span></h2>
+      <div class="underline"></div>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-img"><i class="fas fa-microchip"></i></div>
+        <div class="project-info">
+          <h3>IoT Automated Shade Opening System</h3>
+          <p>Designed a sensor-based system using Arduino and moisture sensors to automatically open shades during rainfall. Documented architecture and authored an IEEE-format research paper.</p>
+          <div class="project-tags"><span>Arduino</span><span>IoT</span><span>Sensors</span></div>
+          <div class="project-links">
+            <a href="#"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-img"><i class="fas fa-brain"></i></div>
+        <div class="project-info">
+          <h3>Student-to-Industry Transition Intelligence Platform</h3>
+          <p>Developed an AI-based analytics platform to evaluate student readiness for industry roles. Mapped academic curriculum with job outcomes to identify skill gaps.</p>
+          <div class="project-tags"><span>Python</span><span>ML</span><span>Flask</span><span>React</span></div>
+          <div class="project-links">
+            <a href="https://github.com/disha260406/Student-to-Industry-Transition-Intelligence-Platform/tree/main/project%20pbl" target="_blank"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="project-card">
+        <div class="project-img"><i class="fas fa-shield-alt"></i></div>
+        <div class="project-info">
+          <h3>Fake Certificate Detection using Blockchain</h3>
+          <p>Built a blockchain-based system to verify the authenticity of certificates. Enhanced data security and prevented fraudulent document usage.</p>
+          <div class="project-tags"><span>Blockchain</span><span>Python</span><span>MySQL</span></div>
+          <div class="project-links">
+            <a href="https://github.com/disha260406/fake-certificate-detection-using-blockchain" target="_blank"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <div class="section-header">
+      <h2>Let's <span>Connect</span></h2>
+      <div class="underline"></div>
+      <p class="contact-subtitle">Have an idea or opportunity? I'd love to hear from you.</p>
+    </div>
+
+    <div class="contact-cards-row">
+      <a href="mailto:dishadevgirkar26@gmail.com" class="contact-card">
+        <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+        <h3>Email Me</h3>
+        <p>dishadevgirkar26@gmail.com</p>
+        <span class="contact-card-cta">Send a mail →</span>
+      </a>
+      <a href="https://www.linkedin.com/in/disha-devgirkar-84486631a/" target="_blank" class="contact-card">
+        <div class="contact-card-icon"><i class="fab fa-linkedin-in"></i></div>
+        <h3>LinkedIn</h3>
+        <p>Let's connect professionally</p>
+        <span class="contact-card-cta">View profile →</span>
+      </a>
+      <a href="https://github.com/disha260406" target="_blank" class="contact-card">
+        <div class="contact-card-icon"><i class="fab fa-github"></i></div>
+        <h3>GitHub</h3>
+        <p>Check out my work</p>
+        <span class="contact-card-cta">View repos →</span>
+      </a>
+      <div class="contact-card no-link">
+        <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <h3>Location</h3>
+        <p>Nagpur, Maharashtra</p>
+        <span class="contact-card-cta">India 🇮🇳</span>
+      </div>
+    </div>
+
+    <div class="contact-form-wrap">
+      <h3>Or drop me a message</h3>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group"><input type="text" id="senderName" placeholder="Your Name" required /></div>
+          <div class="form-group"><input type="email" id="senderEmail" placeholder="Your Email" required /></div>
+        </div>
+        <div class="form-group"><textarea rows="5" id="senderMessage" placeholder="Your Message" required></textarea></div>
+        <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Designed & Built by <span>Disha Devgirkar</span> &copy; 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
