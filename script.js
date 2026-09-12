@@ -175,8 +175,7 @@ document.head.appendChild(style);
 
 // ===== HIDE MISSING PROFILE PLACEHOLDER =====
 const avatarPhoto = document.getElementById('avatarPhoto');
-const DEFAULT_AVATAR = 'https://drive.google.com/uc?export=view&id=1ycNk69MKFmUufhCEImxIgucgW7RkdzPt';
-
+const DEFAULT_AVATAR = '/uploads/1787993499245-disha.jpg';
 async function loadSavedAvatar() {
   if (!avatarPhoto) return;
 
