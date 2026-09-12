@@ -10,6 +10,9 @@ const dataDir = path.join(__dirname, 'data');
 const avatarDataPath = path.join(dataDir, 'avatar.json');
 const DEFAULT_AVATAR_URL = 'https://drive.google.com/uc?export=view&id=1ycNk69MKFmUufhCEImxIgucgW7RkdzPt';
 
+app.use(express.static(__dirname));
+app.use('/uploads', express.static('uploads'));
+
 if (!fs.existsSync(uploadDir)) {
   fs.mkdirSync(uploadDir, { recursive: true });
 }
